@@ -44,7 +44,20 @@ def larvis_response(audio):
     response.runAndWait()
 
 
-
+def larvis_command():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print('Say something...')
+        r.pause_threshold = 1
+        audio = r.listen(source)
+    try:
+        command = r.recognize_google(audio).lower()
+        print('You said: ' + command + '\n')
+    # loop back to continue to listen for commands if unrecognizable speech is received
+    except sr.UnknownValueError:
+        print('....ERROR....')
+        command = larvis_command()
+    return command.lower()
 
 
 
