@@ -280,9 +280,40 @@ def larvis(user_input):
         larvis_response('I Don\'t Know What To Say, Sorry Sir!')
 
 
+# Driver Code
+if __name__ == "__main__":
+    WAKE = ["wake up", "larvis", "hey larvis"]
+    # SERVICE = authenticate_google()
+    authenticate_google()
+    print("Start")
+    while True:
+        print("Listening")
+        text = larvis_command()
+        if text.count(WAKE[0]) > 0 or text.count(WAKE[1]) > 0 or text.count(WAKE[2]) > 0:
+            larvis_response("Hello, What can i do for you?")
+            text = larvis_command()
+            for phrase in CALENDAR_OPTIONS:
+                if phrase in text:
+                    date = get_date(text)
+                    if date:
+                        larvis_response('It Is Private Information, LIDORR, Supplied you with instructions on how to implement it yourself')
+                        # get_events(date, SERVICE)
+                    else:
+                        larvis_response("I don't understand")
+            for phrase in NOTE_OPTIONS:
+                if phrase in text:
+                    larvis_response("What would you like me to write down?")
+                    note_text = larvis_command()
+                    note(note_text)
+                    larvis_response("I've made a note of that.")
+            larvis(text)
 
 
-
+"""
+    Create By Lidor Eliyahu S.
+    All rights reserved
+    Please see README.txt for instructions
+"""
 
 
 
