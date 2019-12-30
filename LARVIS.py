@@ -304,7 +304,7 @@ def larvis(user_input):
 
 # Driver Code
 if __name__ == "__main__":
-    WAKE = ["wake up", "larvis", "hey larvis"]
+    WAKE = ["wake up", "larvis", "hey larvis", "good morning", "ok larvis"]
     SERVICE = authenticate_google()
     print("Start")
     while True:
