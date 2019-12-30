@@ -19,3 +19,9 @@ from time import strftime
 import wolframalpha
 import pytz
 import requests
+
+"""
+    Create By Lidor Eliyahu S.
+    All rights reserved
+    Please see README.txt for instructions
+"""
