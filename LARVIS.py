@@ -139,7 +139,7 @@ def get_date(text):
         return datetime.date(month=month, day=day, year=year)
 
 
-def giveDate():
+def give_date():
     now = datetime.datetime.now()
     my_date = datetime.datetime.today()
     weekday = calendar.day_name[my_date.weekday()]  # e.g. Monday
