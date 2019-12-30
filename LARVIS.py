@@ -33,3 +33,39 @@ DAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sun
 DAY_EXTENTIONS = ["rd", "th", "st", "nd"]
 CALENDAR_OPTIONS = ["what do i have", "do i have plans", "am i busy"]
 NOTE_OPTIONS = ["make a note", "write this down", "remember this"]
+
+
+def larvis_response(audio):
+    print(audio)
+    response = pyttsx3.init()
+    voices = response.getProperty('voices')
+    response.setProperty('voice', voices[2].id)
+    response.say(audio)
+    response.runAndWait()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
