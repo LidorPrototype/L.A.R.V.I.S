@@ -146,6 +146,16 @@ def note(text):
     subprocess.Popen(["notepad.exe", file_name])
 
 
+def authenticate_google():
+    larvis_response('It Is Private Information, LIDOR Has Supplied The Google Developers Link, Please Follow The Steps In The Printed Link!')
+    print("https://developers.google.com/calendar/quickstart/python");
+
+
+def get_events(day, service):
+    larvis_response('It Is Private Information, LIDOR Has Supplied The Google Developers Link, Please Follow The Steps In The Printed Link!')
+    print("https://developers.google.com/calendar/quickstart/python");
+
+
 def larvis(user_input):
     print(user_input)
     if 'hello' in user_input:  # Greet Sofia
