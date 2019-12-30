@@ -60,6 +60,37 @@ def larvis_command():
     return command.lower()
 
 
+def larvis_web_search(find):
+    if 'search google for' in find.lower():
+        reg_ex = re.search('search (.+)', find)
+        if reg_ex:
+            url = "https://www.google.com.tr/search?q={}".format(find[17:])
+            webbrowser.open(url)
+            larvis_response('I\'ve searched Google for ' + find[17:] + ', here are the results')
+        else:
+            print('ERROR!')
+            pass
+    elif 'search youtube for' in find.lower():  # 10
+        reg_ex = re.search('search (.+)', find)
+        if reg_ex:
+            domain = reg_ex.group(1)
+            domain = domain[:7]
+            print('Domain Is: ' + domain)
+            url = 'https://www.' + domain + '.com/results?search_query=' + find[18:]
+            webbrowser.open(url)
+            larvis_response('I\'ve searched youtube for ' + find[18:] + ', here are the results')
+        else:
+            print('ERROR!')
+            pass
+    elif 'search wikipedia for' in find.lower():  # 11
+        reg_ex = re.search('search (.+)', find)
+        if reg_ex:
+            webbrowser.open("https://en.wikipedia.org/wiki/" + (find[20:]))
+            larvis_response('I\'ve searched wikipedia for ' + find[20:] + ', here is the result')
+        else:
+            print('ERROR!')
+            pass
+
 
 
 
