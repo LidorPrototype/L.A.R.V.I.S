@@ -32,7 +32,7 @@ for number 14 you"ll need to go to @https://developers.google.com/calendar/quick
 google team provided for the developers who wish to use it's services.
 
 
-For any inquery you may contact Lidor Eliyahu S via the email that is in the github account page.
+For any inquery you may contact Lidor Eliyahu S via the email that is in the github [account page][1].
 
 
 You may use this project for any reason you find suitable as long as you give a credit to Lidor Eliyahu S.
@@ -45,3 +45,4 @@ You may use this project for any reason you find suitable as long as you give a 
 
 
 
+[1]: https://github.com/LidorPrototype
