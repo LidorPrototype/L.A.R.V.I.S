@@ -305,8 +305,7 @@ def larvis(user_input):
 # Driver Code
 if __name__ == "__main__":
     WAKE = ["wake up", "larvis", "hey larvis"]
-    # SERVICE = authenticate_google()
-    authenticate_google()
+    SERVICE = authenticate_google()
     print("Start")
     while True:
         print("Listening")
@@ -316,10 +315,9 @@ if __name__ == "__main__":
             text = larvis_command()
             for phrase in CALENDAR_OPTIONS:
                 if phrase in text:
-                    date = get_date(text)
-                    if date:
-                        larvis_response('It Is Private Information, LIDORR, Supplied you with instructions on how to implement it yourself')
-                        # get_events(date, SERVICE)
+                    cheack_date = get_date(text)
+                    if cheack_date:
+                        get_events(cheack_date, SERVICE)
                     else:
                         larvis_response("I don't understand")
             for phrase in NOTE_OPTIONS:
@@ -329,6 +327,9 @@ if __name__ == "__main__":
                     note(note_text)
                     larvis_response("I've made a note of that.")
             larvis(text)
+        elif text == "terminate":
+            print("Terminated by your command: " + text)
+            sys.exit()
 
 
 """
