@@ -1,4 +1,4 @@
-Welcome to the L.A.R.V.I.S Virtual Assistant application,
+Welcome to the L.A.R.V.I.S Virtual Assistant application, 
 
 Author name: Lidor Eliyahu Shelef
 
