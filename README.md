@@ -1,6 +1,7 @@
 Welcome to the L.A.R.V.I.S Virtual Assistant application,
 
-Created By Lidor Eliyahu S
+Author name: Lidor Eliyahu S
+Developer name: L-ES
 
 Last Uploading Date: 30th December 2019
 
