@@ -1,6 +1,7 @@
 Welcome to the L.A.R.V.I.S Virtual Assistant application,
 
-Author name: Lidor Eliyahu S
+Author name: Lidor Eliyahu Shelef
+
 Developer name: L-ES
 
 Last Uploading Date: 30th December 2019
